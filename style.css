@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:wght@400;600&family=Barlow:wght@400;600&family=Big+Shoulders+Display:wght@700&family=Commissioner:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@300;400;500;700&family=Josefin+Sans:wght@300;400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=League+Spartan:wght@500;600;700&family=Lexend+Deca&family=Manrope:wght@500;600;700;800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700;800&family=Overpass:wght@300;600&family=Poppins:wght@400;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Space+Mono:wght@700&family=Ubuntu:wght@400;500;700&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Light-Grayish-Violet-app-background: hsl(270, 20%, 96%);
+    --Very-Dark-Desaturated-Violet-submit-button-background: hsl(271, 36%, 24%);
+    --Very-Light-Magenta-radio-button-outline: hsl(289, 100%, 72%);
+    --Pale-Violet-sub-heading-at-the-top-of-the-app-UI: hsl(276, 100%, 81%);
+    --Moderate-Violet-chat-on-the-left: hsl(276, 55%, 52%);
+    --Desaturated-Dark-Violet-chat-on-the-right: hsl(271, 15%, 43%);
+    --Grayish-Blue-placeholder-text: hsl(206, 6%, 79%);
+    --Very-Dark-Desaturated-Violet-main-heading: hsl(271, 36%, 24%);
+    --Dark-Grayish-Violet-paragraph: hsl(270, 7%, 64%);
+    --Light-Magenta: hsl(293, 100%, 63%);
+    --Light-Violet: hsl(264, 100%, 61%);
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: var(--White);
+}
+article{
+    margin:0 auto;
+    position: relative;
+    /* background-color: var(--Moderate-Violet-chat-on-the-left); */
+}
+.purple{
+    background-color: var(--Moderate-Violet-chat-on-the-left);
+    padding:20px;
+    width:60vw;
+    border-radius: 0 0 550px 0;
+    height:100vh;
+    position: relative;
+    z-index: -1; 
+}
+
+/* MOBILE section */
+.phone{
+    position: absolute;
+    top:0;
+    margin:100px 30px 0;
+    padding:0 0 10px;
+    border:10px solid var(--White);
+    border-radius: 25px;
+    background-color:var(--Light-Grayish-Violet-app-background);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.502);
+}
+header{
+    /* border:2px solid black; */
+    border-radius: 20px 20px 5px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px 20px 20px;
+    background-image:linear-gradient(100deg, var(--Light-Violet), var(--Light-Magenta));
+    color: var(--White);
+    position: relative;
+    margin:0 0 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.233);
+}
+header::before{
+    content:"";
+    padding:15px 10px;
+    width:55%;
+    background-color: var(--White);
+    position:absolute;
+    top:0;
+    border-radius: 0 0 20px 20px;
+}
+header img{
+    /* border:2px solid black; */
+    padding:10px;
+}
+.arrow{
+    transform: rotate(180deg);
+    margin:0 0px 0 0;
+}
+header .headerInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 0 0 -20px;
+}
+header p{
+    color:var(--Pale-Violet-sub-heading-at-the-top-of-the-app-UI);
+    margin:3px 0;
+}
+header div img{
+    width:20%;
+    padding:0;
+    border:2px solid var(--White);
+    border-radius: 100px;
+    margin:0 10px 0 0;
+}
+header div h2{
+    font-size: 17px;
+}
+.chatbox p{
+    background-color: var(--Grayish-Blue-placeholder-text);
+    margin:8px 0 8px 10px;
+    width:fit-content;
+    max-width: 65%;
+    padding:8px;
+    border-radius: 15px 10px 10px 5px;
+    font-size:13px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.107);
+    color:var(--Moderate-Violet-chat-on-the-left);
+}
+.chatbox div.img{
+    position: relative;
+    left:75px;
+}
+.chatbox img{
+    width:20%;
+    border-radius:10px;
+    margin:4px;
+}
+.chatbox .right{
+    position: relative;
+    left:83px;
+    background-color: var(--White);
+    border-radius: 10px 15px 5px 10px;
+}
+
+.chatbox .box{
+    /* border:2px solid black; */
+    width:auto;
+    max-width: 80%;
+    margin:5px 0 5px 10px;
+    border-radius: 15px 10px 10px 5px;
+    padding:0px 20px;
+    background-image: linear-gradient(100deg,var(--Light-Magenta),var(--Light-Violet));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color:var(--White);
+    position: relative;
+}
+.chatbox .box p{
+    background-color: transparent;
+    box-shadow: none;
+    color:var(--White)
+}
+.chatbox .box p::before{
+    content: "";
+    padding:10px;
+    border:1px solid var(--White);
+    position: absolute;
+    left:10px;
+    top:12px;
+    border-radius: 20px;
+}
+.msgSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.msgSection img{
+    width:8%;
+    position: absolute;
+    right:10px;
+    top:18px;
+    background-color: var(--Very-Dark-Desaturated-Violet-submit-button-background);
+    padding:7px 8px;
+    border-radius: 100px;
+}
+.chatbox input{
+    width:95%;
+    height: 40px;
+    margin: 15px auto 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--White);
+    border-radius: 20px;
+    outline: none;
+    border:none;
+    padding: 10px 30px;
+    color:var(--Grayish-Blue-placeholder-text);
+    font-size: 14px;
+}
+
+/* DESCRIPTION SECTION */
+
+.description{
+    position: relative;
+    top:250px;
+    background-color: var(--White);
+    padding:30px 40px;
+    text-align: center;
+}
+.description h2{
+    margin:10px 0;
+    color:var(--Very-Dark-Desaturated-Violet-main-heading);
+    font-size: 27px;
+}
+.description p{
+    line-height: 1.5rem;
+    font-size: 15px;
+    color:var(--Grayish-Blue-placeholder-text);
+}
+
+.attribution{
+    position: relative;
+    top:260px;
+    padding:0 0 30px;
+}
