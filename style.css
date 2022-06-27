@@ -28,16 +28,29 @@ article{
     position: relative;
     /* background-color: var(--Moderate-Violet-chat-on-the-left); */
 }
-.purple{
+.phoneContainer{
+    display: flex;
+    flex-direction: column;
+}
+.purple,
+.grey{
     background-color: var(--Moderate-Violet-chat-on-the-left);
     padding:20px;
     width:60vw;
     border-radius: 0 0 550px 0;
-    height:100vh;
+    height:120vh;
     position: relative;
     z-index: -1; 
 }
-
+.grey{
+    background-color: var( --Light-Grayish-Violet-app-background);
+    border-radius: 1050px 0px 0 0;
+    position: absolute;
+    right:0px;
+    top:120vh;
+    width:60vw;
+    height:110vh;
+}
 /* MOBILE section */
 .phone{
     position: absolute;
@@ -112,7 +125,7 @@ header div h2{
 }
 .chatbox div.img{
     position: relative;
-    left:75px;
+    left:78px;
 }
 .chatbox img{
     width:20%;
@@ -121,7 +134,7 @@ header div h2{
 }
 .chatbox .right{
     position: relative;
-    left:83px;
+    left:85px;
     background-color: var(--White);
     border-radius: 10px 15px 5px 10px;
 }
@@ -189,13 +202,13 @@ header div h2{
 
 .description{
     position: relative;
-    top:250px;
-    background-color: var(--White);
+    top:200px;
+    /* background-color: var(--White); */
     padding:30px 40px;
     text-align: center;
 }
 .description h2{
-    margin:10px 0;
+    margin:10px 0 20px;
     color:var(--Very-Dark-Desaturated-Violet-main-heading);
     font-size: 27px;
 }
@@ -207,6 +220,100 @@ header div h2{
 
 .attribution{
     position: relative;
-    top:260px;
+    top:300px;
     padding:0 0 30px;
+}
+
+@media screen and  (min-width:400px){
+    .chatbox .right,
+    .chatbox div.img{
+        left:100px;
+    }
+    .msgSection img{
+        top:17px;
+        right: 14px;
+        padding:8px 9px;
+    }
+    .grey{
+        right: 0;
+    }
+}
+
+@media screen and  (min-width:700px){
+    .phoneContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .phone,
+    .description{
+        position: relative;
+        top:0;
+    }
+    .purple,
+    .grey{
+        width:300px;
+    }
+    .purple{
+        border-radius: 0 0 300px 300px;
+        left:-90px;
+    }
+    .grey{
+        top:150px;
+        height: 120vh;
+    }
+    .phone{
+        width:350px;
+        position: absolute;
+        top:-40px;
+        left:0;
+    }
+    .description{
+        width:50%;
+        position: absolute;
+        top:300px; 
+        right: 0;
+        text-align: left;
+    }
+    .attribution{
+        top:100px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .purple{
+        left:-30px;
+        width:400px;
+        height: 130vh;
+    }
+    .phone{
+        margin-left: 50px;
+    }
+    .description{
+        margin:0 40px 0 0;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    .purple{
+        width:505px;
+        height: 130vh;
+        left: -130px;
+    }
+    .grey{
+        top:100px;
+        height: 145vh;
+    }
+    .phoneContainer{
+        padding:20px 150px;
+    }
+    .phone{
+        margin-left: 300px;
+    }
+    .description{
+        width:35%;
+        padding:10px 22px;
+        right:100px;
+    }
 }
